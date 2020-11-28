@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <div class="box">
+        <div class="register">
+            <h1>Register</h1>
+        </div>
+        <div class="underregister">
+            <h1>Create your account. It's free and only takes a minute</h1>
+        </div>
+        <div class="firstline">
+            <input type="text" placeholder="First Name" id="firstname" onfocusout="firstname2()" onkeyup="firstname()">
+            <input type="text" placeholder="Last Name" id="lastname" onkeyup="lastname()">
+        </div>
+        <div class="secondline">
+            <input type="text" placeholder="Email" id="email" onkeyup="email()">
+            <input type="text" placeholder="Password" id="password" onkeyup="password()">
+            <input type="text" placeholder="Confirm Password" id="confirmpassword" onkeyup="confirmpassword()">
+        </div>
+        <div class="accept">
+            <input id="acceptcheckbox" type="checkbox">
+            <h1>I accept the <a target="_blank" href="https://google.com">Terms of Use</a>&nbsp & <a target="_blank"
+                    href="https://google.com">Privacy Policy.</a></h1>
+        </div>
+        <div class="end">
+            <input type="submit" value="Register Now" class="button" onclick="regex()">
+        </div>
+    </div>
+</body>
+
+</html>

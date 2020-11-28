@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #63738a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box {
+    background: #f2f3f7;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    text-align: center;
+    margin: 0px;
+}
+
+.register h1 {
+    margin: 0px;
+    margin-top: 25px;
+    font-size: 40px;
+    color: #60686f;
+}
+
+.underregister {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.underregister h1 {
+    font-size: 13.75px;
+    color: #60686f;
+}
+
+.firstline {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.secondline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstline input {
+    border-radius: 3px;
+    width: 11.5vw;
+    height: 5vh;
+    border: 1px solid #b3b3b3;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.secondline input {
+    border-radius: 3px;
+    width: 25vw;
+    height: 5vh;
+    border: 1px solid #b3b3b3;
+    margin: 15px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.accept {
+    display: flex;
+    padding-left: 34px;
+    margin-top: 15px;
+}
+
+.accept h1 {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 3px;
+    font-size: 13px;
+    color: #60686f;
+}
+
+.accept input {
+    border: 1px solid #b3b3b3;
+}
+
+.accept input:focus {
+    outline: 1px solid #999;
+}
+
+.accept a {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 3px;
+    font-size: 13px;
+    color: #008000;
+    text-decoration: none;
+}
+
+.accept a:focus {
+    outline: 1px solid #999;
+}
+
+.accept a:hover {
+    color: #33b333;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.button {
+    display: flex;
+    background: #50a851;
+    width: 80%;
+    height: 200%;
+    border-radius: 5px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #61b962;
+    transition: 0.2s;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1090px) {
+    .button {
+        height: 10vh;
+    }
+
+    .box {
+        height: 90%;
+    }
+
+    .accept {
+        padding-right: 34px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .box {
+        width: 90%;
+        height: 90%;
+    }
+
+    .button {
+        height: 8vh;
+    }
+
+    .firstline {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstline input {
+        width: 70%;
+    }
+
+    .secondline input {
+        width: 70%;
+    }
+
+    .accept {
+        padding-left: 90px;
+    }
+}
